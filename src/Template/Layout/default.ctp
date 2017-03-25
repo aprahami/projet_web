@@ -38,11 +38,15 @@ $cakeDescription = 'Cakephp';
 </head>
 <body>
     <nav class="top-bar expanded" data-topbar role="navigation">
+
+
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+                <h1><a href="">Sport+</a></h1>
             </li>
         </ul>
+
+
         <div class="top-bar-section">
             <ul class="right">
                 <?php if($loggedIn) : ?>
@@ -53,7 +57,12 @@ $cakeDescription = 'Cakephp';
             <?php endif; ?>
             </ul>
         </div>
+
     </nav>
+
+
+
+
     <?= $this->Flash->render() ?>
     <div class="container clearfix">
         <?= $this->fetch('content') ?>

@@ -1,6 +1,7 @@
-<h1> Accueil </h1>
+<h1> </h1>
 
 <div class="users form">
+<div id="gauche">
 <?= $this->Form->create("Members") ?>
     <fieldset>
         <legend><?= __('Se connecter') ?></legend>
@@ -10,9 +11,7 @@
     </fieldset>
 <?= $this->Form->button(__('Connexion')); ?>
 <?= $this->Form->end() ?>
-<a href="http://localhost/webproject/sport/inscription"> Pas de compte ? Inscrivez-vous </a>
-<br/>
-<a href="#" onClick="hide('passForget'); return false;"> Mot de passe oublié ? </a> 
+<a href="#" onClick="hide('passForget'); return false;"> Mot de passe oublié ? </a>
 <div id='passForget'>
 <?= $this->Form->create("Mdp") ?>
     <fieldset>
@@ -22,4 +21,18 @@
     </fieldset>
 <?= $this->Form->button(__('Envoyer un email avec un nouveau mot de passe')); ?>
 <?= $this->Form->end() ?>
+</div>
+</div>
+</div>
+<div id="droite">
+<div class="users form 1">
+<?= $this->Form->create("formulaire", ['enctype' => 'multipart/form-data']); ?>
+    <fieldset>
+        <legend><?= __("S'inscrire") ?></legend>
+        <?= $this->Form->input('email') ?>
+        <?= $this->Form->input('password') ?>
+    </fieldset>
+<?= $this->Form->button(__('Inscription')); ?>
+<?= $this->Form->end() ?>
+</div>
 </div>
