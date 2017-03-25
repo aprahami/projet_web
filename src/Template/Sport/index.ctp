@@ -20,6 +20,6 @@
         <?= $this->Form->input('email') ?>
         <input type='hidden' name='index' value='mdpoublie'>
     </fieldset>
-<?= $this->Form->button(__('Envoyer un email avec un nouveau mot de passe')); ?>
+<?= $this->Form->button(__('Réinitialiser le mot de passe')); ?>
 <?= $this->Form->end() ?>
 </div>

@@ -30,6 +30,7 @@ $cakeDescription = 'Cakephp';
     <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('moncompte.css') ?>
     <?= $this->Html->css('connexion.css') ?>
+    <?= $this->Html->css('messeances.css') ?>
     <?= $this->Html->script('script.js')  ?>
 
     <?= $this->fetch('meta') ?>
@@ -45,11 +46,13 @@ $cakeDescription = 'Cakephp';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
+                <li><?= $this->Html->link('Accueil' ,['controller' => 'Sport', 'action' => 'Accueil']); ?> </li>
                 <?php if($loggedIn) : ?>
-                 <li><?= $this->Html->link('Logout',['controller' => 'Sport', 'action' => 'logout']); ?> </li>
-                 <li><?= $this->Html->link('Mon compte' ,['controller' => 'Sport', 'action' => 'mon_compte']); ?> </li>
+                <li><?= $this->Html->link('Mon compte' ,['controller' => 'Sport', 'action' => 'mon_compte']); ?> </li>
+                <li><?= $this->Html->link('Mes séances' ,['controller' => 'Sport', 'action' => 'messeances']); ?> </li>  <li><?= $this->Html->link('Logout',['controller' => 'Sport', 'action' => 'logout']); ?> </li>
                 <?php else : ?>
                     <li><?= $this->Html->link('Inscription',['controller' => 'Sport', 'action' => 'inscription']); ?> </li>
+                    <li><?= $this->Html->link('Connexion',['controller' => 'Sport', 'action' => 'index']); ?> </li>
             <?php endif; ?>
             </ul>
         </div>

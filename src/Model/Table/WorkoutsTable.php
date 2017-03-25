@@ -104,9 +104,10 @@ class WorkoutsTable extends Table
 
     public function getWorkouts($uid)
     {
-        $workouts=$this->find('all')->where(['member_id' => $uid, 'queryBuilder' => function ($q) {
-                return $q->order(['workouts.date' =>'ASC'])])->toArray();
+        $workouts=$this->find('all')->where(['member_id' => $uid]);
+        $workouts=$workouts->order(['workouts.date' => 'DESC']);
 
+        return $workouts;
     }
 }
     
