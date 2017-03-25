@@ -5,10 +5,6 @@ use App\Controller\AppController;
 
 class SportController extends AppController
 {	
-    /*public function Forget()
-    {
-        echo ("coucou");
-    }*/
 
     public function index()
     {
@@ -101,5 +97,82 @@ class SportController extends AppController
     {
 
     }  
+	public function mesobjectsconnectes(){
+		$uid = $this->request->session()->read('uid');
+		$this->loadModel("Devices");
+		$infos=$this->Devices->deviceInfo($this->request->session()->read('uid'));
+		$this->set("infos", $infos);
+		$totest=null;
+		$this->set("test",$totest);
+		$this->set("id",$uid);
+	}
+	/**
+     * Add method
+     *
+     * @return \Cake\Network\Response|null Redirects on successful add, renders view otherwise.
+     */
+    public function add()
+    {
+		$this->loadModel("Devices");
+        $device = $this->Devices->newEntity();
+        if ($this->request->is('post')) {
+            $device = $this->Devices->patchEntity($device, $this->request->data);
+            if ($this->Devices->save($device)) {
+                $this->Flash->success(__('The device has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The device could not be saved. Please, try again.'));
+        }
+        $members = $this->Devices->Members->find('list', ['limit' => 200]);
+        $this->set(compact('device', 'members'));
+        $this->set('_serialize', ['device']);
+    }
+	/**
+     * Edit method
+     *
+     * @param string|null $id Device id.
+     * @return \Cake\Network\Response|null Redirects on successful edit, renders view otherwise.
+     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     */
+    public function edit($id)
+    {
+		$this->loadModel("Devices");
+        $device = $this->Devices->get($id, [
+            'contain' => []
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $device = $this->Devices->patchEntity($device, $this->request->data);
+            if ($this->Devices->save($device)) {
+                $this->Flash->success(__('The device has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The device could not be saved. Please, try again.'));
+        }
+        $members = $this->Devices->Members->find('list', ['limit' => 200]);
+        $this->set(compact('device', 'members'));
+        $this->set('_serialize', ['device']);
+    }
+	/**
+     * Delete method
+     *
+     * @param string|null $id Device id.
+     * @return \Cake\Network\Response|null Redirects to index.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function delete($id)
+    {
+		$this->loadModel("Devices");
+        $this->request->allowMethod(['post', 'delete']);
+        $device = $this->Devices->get($id);
+        if ($this->Devices->delete($device)) {
+            $this->Flash->success(__('The device has been deleted.'));
+        } else {
+            $this->Flash->error(__('The device could not be deleted. Please, try again.'));
+        }
+
+        return $this->redirect(['action' => 'index']);
+    }
 }
 ?>
