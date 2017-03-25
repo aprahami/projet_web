@@ -68,6 +68,7 @@ $cakeDescription = 'Cakephp';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+        <a href="contacts.ctp">Contacts</a>
     </footer>
 </body>
 </html>
