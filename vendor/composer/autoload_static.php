@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7276316b2aa3903536e8450c190d5d1d
+class ComposerStaticInitea8263ea892b33aa978a692437fd9524
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -13,6 +13,7 @@ class ComposerStaticInit7276316b2aa3903536e8450c190d5d1d
         'ede59e3a405fb689cd1cebb7bb1db3fb' => __DIR__ . '/..' . '/cakephp/cakephp/src/Collection/functions.php',
         '90236b492da7ca2983a2ad6e33e4152e' => __DIR__ . '/..' . '/cakephp/cakephp/src/I18n/functions.php',
         'b1fc73705e1bec51cd2b20a32cf1c60a' => __DIR__ . '/..' . '/cakephp/cakephp/src/Utility/bootstrap.php',
+        'f2e83ae2b7a1ef0a96b9612f897ab33c' => __DIR__ . '/..' . '/cakephp/cakephp/src/TestSuite/phpunit-forward-compat.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
     );
@@ -79,7 +80,7 @@ class ComposerStaticInit7276316b2aa3903536e8450c190d5d1d
         ),
         'A' => 
         array (
-            'Aura\\Intl\\_Config\\' => 18,
+            'Aura\\Intl\\' => 10,
             'App\\Test\\' => 9,
             'App\\' => 4,
         ),
@@ -214,9 +215,9 @@ class ComposerStaticInit7276316b2aa3903536e8450c190d5d1d
         array (
             0 => __DIR__ . '/..' . '/cakephp/bake/src',
         ),
-        'Aura\\Intl\\_Config\\' => 
+        'Aura\\Intl\\' => 
         array (
-            0 => __DIR__ . '/..' . '/aura/intl/config',
+            0 => __DIR__ . '/..' . '/aura/intl/src',
         ),
         'App\\Test\\' => 
         array (
@@ -247,17 +248,6 @@ class ComposerStaticInit7276316b2aa3903536e8450c190d5d1d
                 0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
             ),
         ),
-        'A' => 
-        array (
-            'Aura\\Intl' => 
-            array (
-                0 => __DIR__ . '/..' . '/aura/intl/src',
-            ),
-            'Aura\\Composer\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/aura/installer-default/src',
-            ),
-        ),
     );
 
     public static $classMap = array (
@@ -268,10 +258,10 @@ class ComposerStaticInit7276316b2aa3903536e8450c190d5d1d
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7276316b2aa3903536e8450c190d5d1d::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7276316b2aa3903536e8450c190d5d1d::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit7276316b2aa3903536e8450c190d5d1d::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit7276316b2aa3903536e8450c190d5d1d::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitea8263ea892b33aa978a692437fd9524::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitea8263ea892b33aa978a692437fd9524::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitea8263ea892b33aa978a692437fd9524::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitea8263ea892b33aa978a692437fd9524::$classMap;
 
         }, null, ClassLoader::class);
     }

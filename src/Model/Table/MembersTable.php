@@ -135,14 +135,33 @@ class MembersTable extends Table
 
     public function userInfo($uid)
     {
-        if($var =  $this->find()->where(['id' => $uid])->first())
+        if($var =  $this->find('all')->where(['id' => $uid])->first())
         {
             return $var;
         }
         else {
             return null;
         }
-        
+
+    }
+    public function changerMdp($email)
+    {
+        if($var =  $this->find('all')->where(['email' => $email])->first())
+        {
+            $var->password="pass";
+            if($this->save($var))
+            {
+                return $var->password;
+            }
+            else
+            {
+                return null;
+            }
+        }
+        else
+        {
+            return null;
+        }
     }
 }
 ?>
