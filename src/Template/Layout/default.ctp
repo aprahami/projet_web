@@ -41,7 +41,7 @@ $cakeDescription = 'Cakephp';
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+                <h1><a href="">Sport+</a></h1>
             </li>
         </ul>
         <div class="top-bar-section">
@@ -49,9 +49,10 @@ $cakeDescription = 'Cakephp';
                 <li><?= $this->Html->link('Accueil' ,['controller' => 'Sport', 'action' => 'Accueil']); ?> </li>
                 <?php if($loggedIn) : ?>
                 <li><?= $this->Html->link('Mon compte' ,['controller' => 'Sport', 'action' => 'mon_compte']); ?> </li>
-                <li><?= $this->Html->link('Mes séances' ,['controller' => 'Sport', 'action' => 'messeances']); ?> </li>  <li><?= $this->Html->link('Logout',['controller' => 'Sport', 'action' => 'logout']); ?> </li>
+                <li><?= $this->Html->link('Mes objets connectés' ,['controller' => 'Sport', 'action' => 'mesobjectsconnectes']); ?> </li>
+                <li><?= $this->Html->link('Mes séances' ,['controller' => 'Sport', 'action' => 'messeances']); ?></li>  
+                <li><?= $this->Html->link('Logout',['controller' => 'Sport', 'action' => 'logout']); ?> </li>
                 <?php else : ?>
-                    <li><?= $this->Html->link('Inscription',['controller' => 'Sport', 'action' => 'inscription']); ?> </li>
                     <li><?= $this->Html->link('Connexion',['controller' => 'Sport', 'action' => 'index']); ?> </li>
             <?php endif; ?>
             </ul>
@@ -62,6 +63,7 @@ $cakeDescription = 'Cakephp';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+        <a href="contacts.ctp">Contacts</a>
     </footer>
 </body>
 </html>

@@ -87,4 +87,15 @@ class DevicesTable extends Table
 
         return $rules;
     }
+    public function deviceInfo($uid)
+    {
+        if($var = $this->find('all')->toArray())
+        {
+            return $var;
+        }
+        else {
+            return null;
+        }
+        
+    }
 }

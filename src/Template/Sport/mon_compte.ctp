@@ -1,3 +1,4 @@
+<div id="conteneur">
 <div id="image_profil">
 <?php
 
@@ -13,14 +14,18 @@ echo $this->Form->create("formulaire_photo", ['enctype' => 'multipart/form-data'
 echo $this->Form->input('photo', array('label' => 'Photo profil (au format png ou jpg)', 'type' => 'file')); 
 echo $this->Form->button(__('Changer de photo'));
 echo $this->Form->end();
-// Rafraichissez le cache avec ctrl+f5 pour afficher la nouvelle photo
 ?>
 </div>
-
+<div id="description">
+<!--Rafraichissez le cache avec ctrl+f5 pour afficher la nouvelle photo-->
 
 <?php
 if($uid!=null)
 {
-	echo "<p>Bienvenue :<br/> Votre adresse mail est $infos[email]</p>";
+	echo "<p>Bienvenue sur le meilleur site de sport du monde, t'en as de le chance!<br/>
+			 Pour commencer, upload une photo bien badass de ta plus grosse séance de tractions<br/>
+			 Aussi askip ton adresse mail c'est $infos[email]</p>";
 }
 ?>
+</div>
+</div>

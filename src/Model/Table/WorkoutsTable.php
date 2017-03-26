@@ -101,7 +101,6 @@ class WorkoutsTable extends Table
 
         return $rules;
     }
-
     public function getWorkouts($uid)
     {
         $workouts=$this->find('all')->where(['member_id' => $uid]);
@@ -110,4 +109,3 @@ class WorkoutsTable extends Table
         return $workouts;
     }
 }
-    

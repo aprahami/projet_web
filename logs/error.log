@@ -6801,3 +6801,1425 @@ Stack Trace:
 #13 {main}
 
 
+2017-03-26 01:00:01 Error: [PDOException] SQLSTATE[HY000] [1049] Base 'ocres' inconnue
+Request URL: /sport
+Referer URL: http://localhost/webproject/sport
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Connection.php(358): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Connection->getSchemaCollection()
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Query.php(210): Cake\ORM\Table->getSchema()
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Query.php(167): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\MembersTable))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Table.php(1571): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\MembersTable))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Table.php(1173): Cake\ORM\Table->query()
+#12 C:\wamp64\www\webproject\src\Model\Table\MembersTable.php(105): Cake\ORM\Table->find()
+#13 C:\wamp64\www\webproject\src\Controller\SportController.php(26): App\Model\Table\MembersTable->checkUser('rweber@edu.ece....', 'pass')
+#14 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\SportController->index()
+#15 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#16 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\SportController))
+#17 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#28 {main}
+
+
+2017-03-26 01:12:10 Error: [PDOException] SQLSTATE[HY000] [1049] Base 'ocres' inconnue
+Request URL: /sport/mon-compte
+Referer URL: http://localhost/webproject/sport
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(104): Cake\Database\Driver\Mysql->_connect('mysql:host=loca...', Array)
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Mysql->connect()
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Dialect\MysqlDialectTrait.php(63): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Mysql))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Mysql->schemaDialect()
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Database\Connection.php(358): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Table.php(532): Cake\Database\Connection->getSchemaCollection()
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Query.php(210): Cake\ORM\Table->getSchema()
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Query.php(167): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\MembersTable))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Table.php(1571): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\MembersTable))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\ORM\Table.php(1173): Cake\ORM\Table->query()
+#12 C:\wamp64\www\webproject\src\Model\Table\MembersTable.php(138): Cake\ORM\Table->find('all')
+#13 C:\wamp64\www\webproject\src\Controller\SportController.php(55): App\Model\Table\MembersTable->userInfo('84b47d4b-da2e-4...')
+#14 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\SportController->monCompte()
+#15 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#16 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\SportController))
+#17 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#28 {main}
+
+
+2017-03-26 01:28:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:29:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:29:22 Error: [Cake\Controller\Exception\MissingActionException] Action SportController::contacts.ctp() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'SportController',
+  'action' => 'contacts.ctp',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /sport/contacts.ctp
+Referer URL: http://localhost/webproject/sport/mon-compte
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\SportController))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:29:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:31:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:31:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:33:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:33:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:39:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:40:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:40:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:40:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:40:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:41:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:42:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:42:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:42:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:42:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:42:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:44:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:47:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:47:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:47:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:48:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:48:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:48:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:49:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:49:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:49:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:50:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:50:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:50:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:50:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:51:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:51:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:54:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:54:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:54:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:54:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:55:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:55:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:56:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:56:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:56:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:56:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 01:58:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 02:00:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 02:01:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 02:01:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 02:02:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 02:02:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+
+2017-03-26 02:02:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/img/bg.jpg
+Referer URL: http://localhost/webproject/css/cake.css
+Stack Trace:
+#0 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(70): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\BaseApplication.php(78): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(59): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(93): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\webproject\vendor\cakephp\cakephp\src\Http\Server.php(82): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\webproject\webroot\index.php(37): Cake\Http\Server->run()
+#13 {main}
+
+

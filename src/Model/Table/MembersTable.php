@@ -142,6 +142,7 @@ class MembersTable extends Table
         else {
             return null;
         }
+
     }
     public function changerMdp($email)
     {
@@ -161,7 +162,6 @@ class MembersTable extends Table
         {
             return null;
         }
-
     }
 }
 ?>
