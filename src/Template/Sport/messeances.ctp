@@ -1,6 +1,6 @@
 <?php
     $idform=1;
-    //echo date("Y-m-d H:i:s"); //Date en retard d'une heure mais programme fonctionnel, à tester avec une heure en moins
+    //echo date("Y-m-d H:i:s"); //Date en retard de deux heures mais programme fonctionnel, à tester avec 2 heures en moins
     foreach ($workouts as $value) {
     echo $value['sport']." "; 
     echo $value['date']." - "; 

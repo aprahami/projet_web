@@ -108,4 +108,26 @@ class WorkoutsTable extends Table
 
         return $workouts;
     }
+    public function count_workouts()
+    {
+        $compte = $this->find('all')->select('member_id')->distinct(['member_id'])->toArray() ;
+        $i = 0;
+         foreach ($compte as $value)
+         {
+           
+           $nombreseance = $this
+           ->find('all')
+           ->where(['member_id' => $value['member_id']])
+           ->toArray();
+          $table2[$i] =   $value['member_id'];
+         $table[$i] = count($nombreseance);
+         
+         $table3[$i] =  $table[$i].' : '.$table2[$i];
+         
+         $i++;
+         
+         }
+         arsort($table3);
+        return $table3;
+    }
 }

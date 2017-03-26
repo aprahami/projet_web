@@ -47,6 +47,7 @@ $cakeDescription = 'Cakephp';
         <div class="top-bar-section">
             <ul class="right">
                 <li><?= $this->Html->link('Accueil' ,['controller' => 'Sport', 'action' => 'Accueil']); ?> </li>
+                <li><?= $this->Html->link('Classement',['controller' => 'Sport', 'action' => 'classement']); ?> </li>
                 <?php if($loggedIn) : ?>
                 <li><?= $this->Html->link('Mon compte' ,['controller' => 'Sport', 'action' => 'mon_compte']); ?> </li>
                 <li><?= $this->Html->link('Mes objets connectés' ,['controller' => 'Sport', 'action' => 'mesobjectsconnectes']); ?> </li>

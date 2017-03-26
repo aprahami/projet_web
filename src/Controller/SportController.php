@@ -250,5 +250,17 @@ class SportController extends AppController
             }
         }   
     }
+    public function classement()
+    {
+        $uid = $this->request->session()->read('uid');
+        $this->set("uid", $uid);
+        $this->loadModel("Members");
+        $this->loadModel("Workouts");
+        
+
+        $infos3= $this->Workouts->count_workouts();
+        
+        $this->set("infos3",$infos3);
+    }
 }
 ?>
